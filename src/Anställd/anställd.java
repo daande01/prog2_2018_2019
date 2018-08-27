@@ -1,12 +1,12 @@
 /**
  * 
  */
-package prog2_2018_2019;
+package Anställd;
 
 /**
  * @author danand004
  *
  */
-public class Test {
+public class anställd {
 
 }
