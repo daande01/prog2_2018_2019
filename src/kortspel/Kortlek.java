@@ -28,7 +28,7 @@ public class Kortlek {
 	
 	}
 	
-	public blanda(){
+	public void blanda(){
 		
 		
 		
