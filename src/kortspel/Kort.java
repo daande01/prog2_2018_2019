@@ -3,40 +3,48 @@
  */
 package kortspel;
 
+import java.awt.image.BufferedImage;
 
- 
-public class Kort  {
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+public class Kort {
 
 	private int färg;
-	private int valör;	
+	private int valör;
+	private BufferedImage sprite;
 
-	
-	private final String f[] = { "hjärter", "klöver","spader","ruter"};
-	
-	private final String v[]={"ess","två","tre","fyra","fem","sex","sju","åtta","nio","tio","kneckt","dam","kung","ess"};
-	
-	public Kort(int f,int v){
-		
-		färg =f;
-		valör=v;
-		
-		
+	private final String f[] = { "hjärter", "klöver", "spader", "ruter" };
+
+	private final String v[] = { "ess", "två", "tre", "fyra", "fem", "sex", "sju", "åtta", "nio", "tio", "kneckt",
+			"dam", "kung", "ess" };
+
+	public Kort(int f, int v, BufferedImage s) {
+
+		färg = f;
+		valör = v;
+		sprite = s;
+
 	}
-	
-	@Override
-	public String toString(){
-		
-		
-		return f[färg]+""+v[valör];
-		
-			}
-	
-	
 
-	
-	
-	
+	public JPanel getPanel() {
+
+		JPanel p = new JPanel();
+
+		JLabel l1 = new JLabel(new ImageIcon(sprite));
+
+		p.add(l1);
+		
+		
+
+		return p;
+	}
+
+	public String toString() {
+
+		return f[färg] + "" + v[valör];
+
+	}
+
 }
-
-
-
