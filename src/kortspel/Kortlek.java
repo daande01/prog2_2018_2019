@@ -13,7 +13,7 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 import javax.swing.JPanel;
 
-public class Kortlek extends JFrame {
+public class Kortlek {
 
 	private LinkedList<Kort> deck = new LinkedList<Kort>();
 	private BufferedImage[] sprites;
@@ -29,7 +29,6 @@ public class Kortlek extends JFrame {
 
 		}
 
-		
 	}
 
 	public LinkedList<Kort> getDeck() {
@@ -91,7 +90,5 @@ public class Kortlek extends JFrame {
 		Collections.shuffle(deck);
 
 	}
-
-	
 
 }
