@@ -19,6 +19,7 @@ public class Gui extends JComponent {
 	Player p1 = new Player();
 	Dealer d1 = new Dealer();
 
+	
 	JButton startGame = new JButton("start game");
 	JButton cardButton = new JButton("card button");
 	JButton stopButton = new JButton("stop game");
@@ -28,6 +29,7 @@ public class Gui extends JComponent {
 	JLabel player = new JLabel("player");
 	JLabel dealer = new JLabel("dealer");
 
+	
 	public Gui() {
 
 		kortlek.blanda();
@@ -48,6 +50,9 @@ public class Gui extends JComponent {
 		playerPanel.setBorder(BorderFactory.createLineBorder(Color.black));
 		startGame.addActionListener(new ActionListener() {
 
+			/* (non-Javadoc)
+			 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
+			 */
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
