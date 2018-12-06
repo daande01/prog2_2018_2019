@@ -36,7 +36,7 @@ public class dbinsertprepered {
 		PreparedStatement preparedStmt = conn.prepareStatement(query);
 		preparedStmt.setString(1, "volvo");
 		preparedStmt.setString(2, "v90");
-		//preparedStmt.setInt(3, 1212);
+		preparedStmt.setInt(3, 1212);
 
 
 		// execute the preparedstatement
